@@ -84,10 +84,17 @@
 <body>
 
     <h1>Đăng Ký Nguyện Vọng Xét Tuyển 2026</h1>
-    <audio autoplay hidden>
-        <source src="music.mp3" type="audio/mpeg">
-        Trình duyệt không hỗ trợ audio rồi đó má ơi!
-    </audio>
+ <audio id="nhacNen" hidden>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('nhacNen');
+    audio.play();
+  }, { once: true });
+</script>
+
 
     <div class="controls">
         <input type="number" id="stt" placeholder="Thứ tự NV" min="1">
